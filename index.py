@@ -1,11 +1,6 @@
 import csv
 
-arq = (open('../covid.csv'))
-dados = csv.reader(arq)
-print(dados)
-print(type(dados))
-print()
-
-for item in dados:
-    print(item)
-    print(type(item))
+def getDados():
+    arq = (open('covid.csv'))
+    dados = csv.reader(arq)
+    return(dados)
