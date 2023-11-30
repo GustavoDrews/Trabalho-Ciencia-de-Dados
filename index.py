@@ -7,7 +7,8 @@ def getDados():
 
 def getCountries():
     dados = getDados()
-
+    next(dados)
+    
     countries = []
     for item in dados:
         if not item[1] in countries:
