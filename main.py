@@ -20,7 +20,7 @@ window = tk.Tk()
 window.title("Janela Principal")
 
 # Defina a geometria da janela principal (largura x altura)
-window.geometry("400x200")
+window.geometry("400x400")
 
 # Crie um widget Entry para a entrada de texto
 entry = tk.Entry(window, width=30)
