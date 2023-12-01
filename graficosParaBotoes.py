@@ -141,3 +141,14 @@ def pizzaNovasMortes(quant):
     plt.title('TOP '+str(quant)+' Novas mortes Diárias (Covid-19)')
 
     plt.show()
+
+def tabelaSomaTotalColunas():
+    dados = pd.read_csv("covid.csv")
+
+    cases_by_country = dados.groupby('country')[[
+        'daily_new_cases',
+        'active_cases',
+        'daily_new_deaths'
+    ]].sum()
+
+    print(cases_by_country)

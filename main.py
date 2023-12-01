@@ -48,6 +48,9 @@ def grafico_pizza_mortes():
     else:  
         gpbtn.pizzaNovasMortes(numeroPaisesInformado)
 
+def totalizar_no_terminal():
+    gpbtn.tabelaSomaTotalColunas()
+
 
 # Crie a janela principal
 window = tk.Tk()
@@ -83,6 +86,10 @@ open_button_pizza_casos.pack(side=tk.TOP, pady=10)  # Use side=tk.TOP para alinh
 # Crie um botão para abrir uma nova janela com o mapa de mortes
 open_button_pizza_mortes = tk.Button(window, text="Gráfico de Pizza de Mortes", command=grafico_pizza_mortes)
 open_button_pizza_mortes.pack(side=tk.TOP, pady=10)  # Use side=tk.TOP para alinhar ao topo e adicione pady para espaçamento
+
+# Crie um botão para abrir uma nova janela com o mapa de mortes
+open_button_lista_soma_colunas = tk.Button(window, text="Printar Totalizadores no Terminal", command=totalizar_no_terminal)
+open_button_lista_soma_colunas.pack(side=tk.TOP, pady=10)  # Use side=tk.TOP para alinhar ao topo e adicione pady para espaçamento
 
 # Execute o loop de eventos do Tkinter
 window.mainloop()
