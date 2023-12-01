@@ -73,7 +73,7 @@ def mortesDiariasPaises(paisSelecionado):
 
 def mapaPaises(info):
     # Carrega os dados do arquivo CSV
-    caminho_arquivo = 'covid.csv'
+    caminho_arquivo = 'covid2.csv'
     dados = pd.read_csv(caminho_arquivo)
 
     if info == 'mortes':
